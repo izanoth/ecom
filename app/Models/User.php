@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use App\Models\Shipping;
+use Laravel\Passport\HasApiTokens as HasOAuthApiTokens;
+use App\Models\Shipping; 
 use App\Models\Cart;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasOAuthApiTokens, HasFactory, Notifiable; 
 
     protected $table = 'users';
     protected $primaryKey = 'id';

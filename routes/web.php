@@ -9,7 +9,6 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ShippingController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes

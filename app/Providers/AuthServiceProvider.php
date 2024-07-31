@@ -20,7 +20,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Auth::extend('admins', function ($app, $name, array $config) {
+	    Auth::extend('admins', function ($app, $name, array $config) {
             return new FilamentGuard(Auth::createUserProvider($config['provider']));
         });
     }
